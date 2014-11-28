@@ -1,0 +1,94 @@
+<div class="intro-header main_container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-offset-0 action_box">
+                <div class="intro-message">
+                 Compare Renewable Electricity Packages For Your Home or Apartment 
+                </div>
+                <form class="form-inline splash_form" action="/electric_packages" method="GET">
+                    <div class='form-group'>
+                        <input type="text" name="zip_code" id="splash_input" placeholder="Enter Zip" autofocus>
+                    </div>
+                    <div class="form-group ">
+                        <input class='zip_submit btn btn-success' type="submit" id="splash_submit" value="Go Green">
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.intro-header -->
+
+<!-- middle Section -->
+<div class="second_section">
+    <div class="container">
+        <div class="row how_it_works">
+            How It Works
+        </div>
+        <h2>You Don't Need A Solar Panel To Run Your Home On Renewable Energy</h2>
+        <div class="row" id="pitches">
+            <div class="col-md-4 pitch_point">
+                <div class="pitch_icon">
+                    <img src="<%= asset_path( 'search.png' ) %>">
+                </div>
+                <div class="pitch_tagline">Search And Review Your Local Renewable Electricity Packages</div>
+            </div>
+            <div class="col-md-4 pitch_point">
+                <div class="pitch_icon">
+                    <img src="<%= asset_path( 'select.png' ) %>">
+                </div>
+                <div class="pitch_tagline">Choose The Package That Works For You</div>
+            </div>
+            <div class="col-md-4 pitch_point">
+                <div class="pitch_icon">
+                    <img src="<%= asset_path( 'turbine.png' ) %>">
+                </div>
+                <div class="pitch_tagline">Join The Green Energy Movement</div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!-- <div class="third_section">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Questions?</h1>
+            <h2>How do I know if I am eligable to switch?</h2>
+                <h3>In deregulated markets, if you currently pay your utility company directly (vs. paying your building or a landlord), you have the right to select your electricity providers –it’s that simple!</h3>
+            <h2>Why should I switch to green electricity?</h2>
+                <h3>We believe that there is a HUGE  knowledge gap in that most people don't know that they have a choice when it comes to their electricity supplier, and even fewer know that there are renewable energy options out there! We are hoping to bridge that gap and provide our customers with the opportunity to decrease their carbon footprints and invest in the future of renewable energy.</h3>
+            <h2>How do I know the green electricity suppliers are reliable?</h2>
+                <h3>Regardless of which utility company your choose, your electricity will continue to be delivered to your home or apartment by the same local company who currently owns and maintains the electricity lines. If there is a power outage, your electricity will return at the same time as your neighbor’s who may not be a Greenir customer. What you are choosing from Greenir is the supplier of the electricity, not the delivery method, so there should be no concerns about potential blackouts</h3>
+            <h1 id="see_more_faq"><a href="/faq">See Our Entire FAQ Page!</a></h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div> -->
+
+<div class="third_section">
+    <div class="row">
+        <div class="col-md-6">
+            <h1><img src="<%= asset_path( 'checkmark.png' ) %>">No noticeable changes in service</h1>
+        </div>
+        <div class="col-md-6">
+            <h1><img src="<%= asset_path( 'checkmark.png' ) %>">Carefully vetted energy partners</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h1><img src="<%= asset_path( 'checkmark.png' ) %>">Switching is easy</h1>
+        </div>
+        <div class="col-md-6">
+            <h1><img src="<%= asset_path( 'checkmark.png' ) %>">Competitive energy prices!</h1>
+        </div>
+    </div>
+        <h2 id="see_more_faq"><a href="/faq">Need More Information? See Our Entire FAQ Page!</a></h2>
+</div>
+
+<script>
+  $(function(){
+    lightHeader();
+    colorNav();
+  });
+</script>

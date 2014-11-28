@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GetGreenir</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- SumoMe Code -->
+  <!-- // <script src="//load.sumome.com/" data-sumo-site-id="bfe9c0cf729c0949e69e4bb553d2e27a40dfaebe84de0baffc349d5a20bf3081" async></script> -->
+  <!-- End SumoMe Code -->
+</head>
+<body>
+  <!-- Navigation -->
+
+    <div class="navbar navbar-default custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img class='logo' src="<%= asset_path( 'greenir.png' ) %>"> Greenir
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/faq">FAQ</a> </li>
+            <li><a style="background-color: #428bca; color: white" href="mailto:help@getgreenir.com?Subject=Help%20With%20Greenir">Questions?</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<%= yield %>
+
+
+<!-- <div class="footer">
+  <a href="#" class="footer_links"><img src="<%= asset_path( 'fb.png' ) %>"></a>
+  <a href="#" class="footer_links"><img src="<%= asset_path( 'twitter.png' ) %>"></a>
+  <a href="#" class="footer_links"><img src="<%= asset_path( 'linkedin.png' ) %>"></a>
+</div> -->
+
+
+
+
+<!-- Google Analytics Start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53028102-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Analytics End -->
+
+<!-- Start Firehose Script -->
+
+<script type="text/javascript">
+
+if( !(navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ )) {
+    var FHChat = {product_id: "01ff0bafeb8f"};
+  FHChat.properties={};FHChat.set=function(key,data){this.properties[key]=data};!function(){var a,b;return b=document.createElement("script"),a=document.getElementsByTagName("script")[0],b.src="https://chat-client-js.firehoseapp.com/chat-min.js",b.async=!0,a.parentNode.insertBefore(b,a)}();
+}
+
+</script>
+
+<!-- End Firehose -->
+</body>
+</html>

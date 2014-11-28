@@ -1,0 +1,645 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    /*font-weight: 300;*/
+}
+.main_container {
+  padding-top: 6em;
+}
+.big_text {
+  font-size: 2em;
+}
+/* Navigation Styling Starts */
+.custom {
+  border: 0;
+}
+.custom .nav {
+  margin-right: 20px;
+}
+.custom .navbar-nav>li>a {
+  margin-top: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom .nav li a:hover {
+  color: rgb(49, 240, 103);
+  background-color: transparent;
+}
+
+.custom .navbar-brand {
+  color: #333;
+  padding: 0;
+  font-size: 20px;
+
+}
+
+.custom .navbar-brand:hover {
+  color: rgb(49, 240, 103);
+  background-color: transparent;
+}
+
+.navbar {
+  height: 5em;
+  background-color: white;
+  padding-bottom: 80px;
+}
+
+.logo {
+  height: 90px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Navigation Styling Ends */
+
+/**************HOME PAGE*****************/
+/* Start Intro Section */
+
+.action_box {
+  background-color: rgba(8,8,8,0.5);
+  border-radius: 6px;
+  height: 100%;
+  margin-top: 20px;
+}
+.intro-header {
+    margin-top: 80px;
+    padding-bottom: 5em;
+    text-align: center;
+    color: #f8f8f8;
+/*    background: url("temp_green_background.jpg") no-repeat center center;
+    background-size: cover;*/
+
+    background: url("temp_green_background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.intro-message {
+  font-size: 3em;
+  padding: 0.5em 1em;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.splash_form {
+  margin: .5em 0;
+}
+
+#splash_input {
+	height: 45px;
+	width: 10em;
+	font-size: 30px;
+  border: 0;
+  border-radius: 2px;
+  color: #333;
+}
+
+.zip_submit {
+    font-size: 23px;
+}
+
+
+/* End Intro section */
+
+/* Start Second/Third Section */
+.second_section, .third_section {
+  text-align: center;
+}
+
+.how_it_works, .concerns_title {
+  font-size: 4em;
+  margin-top: 0.5em;
+  word-spacing: 9px;
+  letter-spacing: 1px;
+}
+
+#pitches, #concerns_1, #concerns_2 {
+  /*margin: 5em 0;*/
+}
+.pitch_point {
+  padding: 2em 0;
+  margin: 1em 0;
+}
+.pitch_tagline {
+  font-size: 1.8em;
+  letter-spacing: 0.5px;
+  margin-top: 1em;
+}
+.pitch_icon img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.third_section .col-md-6 {
+  text-align: center;
+}
+
+.third_section h2 {
+  color: #5cb85c;
+}
+
+.third_section #see_more_faq a {
+  color: #428bca;
+  text-align: center;
+}
+
+.third_section #see_more_faq h2 {
+  text-align: center;
+}
+
+.third_section #see_more_faq a:hover {
+  color: #449d44;
+  text-decoration: none;
+}
+
+.third_section a {
+  color: #5cb85c;
+}
+
+.third_section a:hover {
+  color: #449d44;
+  text-decoration: none;
+}
+
+.third_section h1 {
+  text-align: left;
+  padding-left: 130px;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.concern_tagline {
+  height: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.concern_icon {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+/* End Second/Third Section*/
+
+/****************ALL Electric Packages ***************/
+
+/*sidebar*/
+.sidebar {
+  background-color: #ccc;
+  position: fixed;
+  width: 23.3%;
+  height: 80%;
+  z-index: 1;
+}
+.sidebar_title {
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  font-weight: 500;
+}
+.sidebar_section {
+  padding: 1em;
+  border-bottom: 1px solid white;
+  min-height: 8em;
+  color: #777;
+}
+.sidebar_items {
+  margin-top: 1em;
+}
+.sidebar_item {
+  width: 45%;
+  text-align: right;
+  display: inline-block;
+}
+.quad_group {
+  display: inline-block;
+  text-align: center;
+}
+
+
+/*end sidebar*/
+.electric_packages_big_right {
+  display: inline-block;
+  position: absolute;
+  height: 80%;
+  width: 73%;
+  overflow: scroll;
+  top: 6em;
+}
+.electric_packages_big_right, .electric_packages {
+  /*background-color: #eee;*/
+}
+.electric_packages {
+  /*background-color: green;*/
+  padding: 1em;
+/*  position: fixed;
+  width: 73%;
+  overflow: scroll;
+  height: 100%;*/
+}
+.electric_package {
+  /*background-color: blue;*/
+  border: 1px solid black;
+  margin-top: 5px;
+  height: 10em;
+  padding: 1em;
+}
+.electric_package_name {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.electric_package_price {
+  font-size: 2.1em;
+  margin-top: 10px;
+}
+
+.units {
+  font-size: 0.3em;
+}
+.electric_package_actions {
+  margin-top: 1em;
+}
+.electric_package_top {
+  min-height: 12em;
+}
+.energy_badge {
+  width: 30%;
+  display: inline-block;
+}
+
+
+/* Start Electric Packages Index */
+section {
+    padding: 100px 0;
+
+}
+
+.alizarin {
+    background: #5cb85c;
+}
+
+.amethyst {
+    background: #9b59b6;
+}
+
+.emerald {
+    background: #2ecc71;
+}
+
+.midnight-blue {
+    background: #428bca;
+    color: white;
+}
+
+.peter-river {
+    background: #3498db;
+}
+
+#labels .intro {
+  background-color: #BBBABA;
+  color: white;
+  padding: 10px 0 10px 0;
+
+}
+
+#labels .current_price {
+  float: right;
+  display: inline-block;
+
+}
+
+#labels .price {
+  color: #5cb85c;
+  text-decoration: underline;
+}
+
+#labels .intro a {
+  font-size: 18px;
+}
+
+#labels hr {
+  margin-top: 40px;
+}
+
+.dl {
+    /*background: #f0f0f0;*/
+    padding: 0px 0;
+    /*border-radius: 20px;*/
+    position: relative;
+    border: 1px solid black;
+}
+
+.dl:before {
+    /*content: " ";*/
+    height: 20px;
+    width: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -10px;
+}
+    
+.dl .brand {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+    min-height: 100px; 
+}
+
+.dl .discount {
+    min-height: 50px;
+    position: relative;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+
+    padding: 20px 15px 0;
+    color: white;
+}
+.kwh {
+  font-size: 20px;
+}
+.dl .discount:after {
+    content: " ";
+    
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 20%;
+}
+
+.dl .discount.alizarin:after {
+    border-top: 20px solid #5cb85c;
+}
+
+.dl .discount.peter-river:after {
+    border-top: 20px solid #3498db;
+}
+
+.dl .discount.emerald:after {
+    border-top: 20px solid #2ecc71;
+}
+
+.dl .discount.amethyst:after {
+    border-top: 20px solid #9b59b6;
+}
+
+.dl .discount .type {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.dl .descr {
+    color: #999;
+    margin-top: 10px;
+    padding: 20px 15px; 
+}
+ 
+.dl .ends {
+    padding: 0 15px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.dl .coupon {
+    min-height: 50px;
+    text-align: center;
+/*    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 15px;
+}
+
+.dl .coupon a.open-code {
+    color: #16a085;
+}
+
+.dl a:hover {
+  text-decoration: none;
+}
+
+.dl .coupon:hover {
+  color: #fff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+
+.dl .coupon .code {
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #f1c40f;
+    background: #f0f0f0;
+}
+
+/*End Electric Packages Index*/
+
+
+/************FAQ ************/
+.faq_heading {
+  font-size: 3em;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+.faq_splash {
+  background-position-y: -220px; 
+  letter-spacing: 3px;
+}
+
+.faq_subheading {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+.faqs {
+  /*margin-bottom: 5em;*/
+  /*letter-spacing: 0.5px;*/
+}
+.faq {
+  margin-top: 2em;
+}
+.faq_title {
+  font-size: 1.7em;
+}
+.faq_answer {
+  margin-left: 2em;
+  display: none;
+}
+.faq_paragraph {
+  display: inline-block;
+  width: 50em;
+  margin-top: 0.3em;
+}
+.faq_image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Start Footer */
+
+.footer {
+  background-color: #eee;
+  height: 70px;
+  bottom: 0;
+  clear: both;
+  position: relative;
+  margin-top: -3em;
+  width: 100%;
+
+}
+
+.footer_links {
+  display: inline-block;
+  margin: 0.3em;
+  float: right;
+}
+
+.footer img {
+  height: 50px;
+  width: 50px;
+}
+
+/* End Footer */
+
+/*MEDIA QUERIES*/
+@media(max-width: 600px) {
+  /* Intro Section */
+  .intro-message {
+    font-size: 2em;
+  }
+  #splash_input {
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  .electric_packages_big_right {
+    position: relative;
+    width: initial;
+    top: inherit;
+  }
+
+}
+
+
+/* Begin FAQ Page Styling */
+
+.faq_title {
+  margin-top: 20px;
+  font-size: 4em;
+}
+
+.faq_header .intro-header {
+   padding-bottom: 50px;
+}
+
+.faqs {
+  /*padding: 0 20px 20px 20px;*/
+}
+
+.faqs ul {
+  text-align: center;
+  display: table;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.faqs li {
+  display: table-cell;
+  font-size: 30px;
+}
+
+.faqs li a {
+  color: #5cb85c;
+}
+
+.faqs .accordion-heading {
+  margin-bottom: 10px;
+}
+
+.faqs h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.faqs .accordion-toggle {
+  font-size: 25px;
+  color: grey;
+}
+
+.faqs .accordion-toggle:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.faqs .accordion-body {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+
+/* End FAQ Page Styling */
+
+
+/* Start Checkout Page Styling */
+
+.checkout .table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.checkout .your_selection {
+  font-size: 18px;
+}
+
+.checkout .your_selection a:hover {
+  color: #449d44;
+  text-decoration: none;
+}
+
+.user_submit {
+  width: 100%;
+  font-size: 25px;
+  background-color: 
+}
+
+.sign_up_form label {
+  font-size: 18px;
+}
+
+.sign_up_form p {
+  font-size: 12px;
+}
+
+/* End Checkout Page Styling */
+
+
+
+
+
+
+
+
