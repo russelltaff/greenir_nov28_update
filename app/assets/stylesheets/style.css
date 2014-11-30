@@ -138,6 +138,10 @@ body {
   text-align: center;
 }
 
+.third_section .row {
+  margin-right: 0;
+}
+
 .third_section h2 {
   color: #5cb85c;
 }
@@ -611,6 +615,10 @@ section {
   width: 100%;
 }
 
+.checkout .row {
+  margin-right: 0;
+}
+
 .checkout .your_selection {
   font-size: 18px;
 }
@@ -628,6 +636,10 @@ section {
 
 .sign_up_form label {
   font-size: 18px;
+}
+
+.sign_up_form .row {
+  margin-right: 0;
 }
 
 .sign_up_form p {
