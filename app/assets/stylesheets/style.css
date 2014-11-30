@@ -71,7 +71,7 @@ body {
 /*    background: url("temp_green_background.jpg") no-repeat center center;
     background-size: cover;*/
 
-    background: url("field.jpg") no-repeat center fixed; 
+    /*background: url("<%= asset_path( 'field.jpg' ) %>") no-repeat center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
