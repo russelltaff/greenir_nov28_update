@@ -1,9 +1,15 @@
+<!-- Allows for tooltip hoverover on current price -->
+<script type="text/javascript">$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+<!-- end hover over -->
+
 
 <section id="labels">
   <div class="container">
     <div class="row">
-         <h1 class="intro">Most Affordable Renewable Energy Packages For: <%= @zip_code %> <a href="#" class="">Click here to see all of your options</a></h1>
-        <h1>Your Best Variable Rate Packages <span class="current_price">Current Price: <a class="price" data-toggle="tooltip" data-placement="left" title="Tooltip on left">15.9¢</a></span></h1>
+         <h1 class="intro">Most Affordable Renewable Energy Packages For: <%= @zip_code %> <br /> <a href="#" class="">Click here to see all of your options</a></h1>
+        <h1>Your Best Variable Rate Packages <span class="current_price">Current Price: <a class="price" data-toggle="tooltip" data-placement="left" title="An estimated price based on last month's Con Edison prices">15.9¢*</a></span></h1>
     </div>
       <div class="row">
         <% @electric_packages_variable.each do |package| %>
@@ -70,8 +76,3 @@
       </div>
   </div>
 </section>
-
-<a href="http://ctt.ec/a8c8c" target="_blank">Tweet: I just switched to renewable energy and you can to! http://ctt.ec/a8c8c+ #GetGreenir</a>
-<script type="text/javascript">$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})</script>
