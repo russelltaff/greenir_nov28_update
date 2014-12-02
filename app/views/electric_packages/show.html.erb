@@ -1,19 +1,71 @@
+<section id="labels">
+  <div class="container">
+    <div class="row">
+         <h1 class="intro">All Renewable Energy Packages For: <%= @zip_code %></h1>
+        <h1>Your Best Variable Rate Packages <span class="current_price">Current Price: <a class="price" data-toggle="tooltip" data-placement="left" title="An estimated price based on last month's Con Edison prices">15.9¢*</a></span></h1>
+    </div>
+      <div class="row">
+        <% @all_variable.each do |package| %>
+            <div class="col-sm-6 col-md-4">
+              <div class="dl">
+                <div class="brand">
+                   <img src="<%= package.provider.logo %>" />
+                   <h3><%= package.percent_renewable %></h3>
+                   <h4><%= package.terms %></h4>
+                </div>
+                <div class="discount alizarin">
+                    <%= package.price %> <span class="kwh">per kwh</span>
+                </div>
+                <div class="descr">
+                    <strong>
+                        <%= package.description %> 
+                    </strong> 
+                </div>
+                <a href="/electric_packages/checkout/<%= package.id %>">
+                    <div class="coupon midnight-blue">
+                    Choose Package
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <% end %>
+      </div>
+      <hr />
+  </div>
 
 
-<h2><%= @electric_package.name %></h2>
-<div><%= @electric_package.description %></div>
-<div><%= @electric_package.terms %></div>
-<div><%= @electric_package.plan_type %></div>
-<div><%= @electric_package.price %></div>
-<div><%= @electric_package.percent_renewable %></div>
-<div><%= @electric_package.duration %></div>
-<div><%= @electric_package.provider_id %></div>
-<div><%= @electric_package.sales_id %></div>
-<div><%= @electric_package.cancellation_fee %></div>
-<table class="table">
-	<tr>
-		<td><%= @electric_package.name %></td>
-		<td><%= @electric_package.description %></td>
-		<td>test</td>
-	</tr>
-</table>
+
+  <div class="container">
+    <div class="row">
+         <h1>Your Best Fixed Rate Packages</h1>
+    </div>
+      <div class="row">
+        <% @all_fixed.each do |package| %>
+            <div class="col-sm-6 col-md-4">
+              <div class="dl">
+                <div class="brand">
+                   <img src="<%= package.provider.logo %>" />
+                   <h3><%= package.percent_renewable %></h3>
+                    <h4><%= package.terms %></h4>
+                </div>
+                <div class="discount alizarin">
+                    <%= package.price %> <span class="kwh">per kwh</span>
+                </div>
+                <div class="descr">
+                    <strong>
+                        <%= package.description %> 
+                    </strong> 
+                </div>
+                <a href="/electric_packages/checkout/<%= package.id %>" class="choose_package">
+                    <div class="coupon midnight-blue">
+                    Choose Package
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <% end %>
+      </div>
+  </div>
+</section>

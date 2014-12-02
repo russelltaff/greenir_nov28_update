@@ -338,6 +338,7 @@ section {
     /*border-radius: 20px;*/
     position: relative;
     border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 .dl:before {

@@ -19,6 +19,8 @@ GetGreenir::Application.routes.draw do
 
   post '/user_emails' => "user_emails#create"
 
+  get '/electric_packages/all' => "electric_packages#show"
+
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
 #                       POST   /providers(.:format)                  providers#create
