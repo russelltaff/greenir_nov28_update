@@ -26,7 +26,7 @@
 //         }, function() {
 //           $(this).css("color", "#333");
 //         });
-}
+// }
 function faqSlide(){
   $('.faq_title').on("click", function(e) {
     $(this).siblings(".faq_answer").slideToggle();
