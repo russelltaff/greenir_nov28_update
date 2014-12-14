@@ -33,7 +33,22 @@ class ElectricPackagesController < ApplicationController
     @user_email = UserEmail.new
   end
 
+  def update
+    @electric_package = ElectricPackage.find(params[:id])  
+    if @electric_package.update_attributes(params[:electric_package])  
+      flash[:notice] = "Successfully updated product."  
+    end  
+    respond_with(@electric_package)  
+  end
+
   def purchase
 
+  end
+
+
+  private
+
+  def electric_package
+    params.require(:electric_package).permit(:name, :description, :terms, :plan_type, :percent_renewable, :duration, :cancellation_fee, :contract_url)
   end
 end

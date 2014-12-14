@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 20141106004117) do
     t.integer  "provider_id"
     t.integer  "sales_id"
     t.string   "cancellation_fee"
+    t.string   "contract_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
