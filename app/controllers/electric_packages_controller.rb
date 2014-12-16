@@ -33,12 +33,18 @@ class ElectricPackagesController < ApplicationController
     @user_email = UserEmail.new
   end
 
-  def update
-    @electric_package = ElectricPackage.find(params[:id])  
-    if @electric_package.update_attributes(params[:electric_package])  
-      flash[:notice] = "Successfully updated product."  
-    end  
-    respond_with(@electric_package)  
+def update
+    @electric_package = ElectricPackage.find(params[:id])
+
+    respond_to do |format|
+      if @electric_package.update_attributes(params[:electric_package])
+        format.html { redirect_to @electric_package, notice: 'Package was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @electric_package.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def purchase

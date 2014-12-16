@@ -18,7 +18,7 @@
                 </div>
                 <div class="descr" data-toggle="modal" data-target="#modal_<%= package.id %>">
                     <strong>
-                        <%= package.description %> 
+                        <a href="<%= package.contract_url %>" target="_blank">Residential Electricity Sales Agreement</a>
                     </strong> 
                 </div>
                 <a href="/electric_packages/checkout/<%= package.id %>">
@@ -40,7 +40,9 @@
         <h4 class="modal-title" id="myModalLabel"><%= package.provider.name %>: <%= package.terms %>, <%= package.percent_renewable %></h4>
       </div>
       <div class="modal-body">
-        <%= package.price %>
+        Price: <%= package.price %>
+        <br>
+        See Contract: <a href="<%= package.contract_url %>" target="_blank">Residential Electricity Sales Agreement</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
