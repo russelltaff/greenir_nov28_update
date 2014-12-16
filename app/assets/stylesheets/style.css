@@ -456,6 +456,7 @@ section {
     color: #999;
     margin-top: 10px;
     padding: 20px 15px; 
+    font-size: 16px;
 }
  
 .dl .ends {
@@ -500,6 +501,10 @@ section {
 
 .modal {
   margin-top: 10%;
+}
+
+.modal .modal-header {
+  font-size: 18px;
 }
 
 /*End Electric Packages Index*/
@@ -695,6 +700,20 @@ section {
 }
 
 /* End Checkout Page Styling */
+
+/* Start Thank You Page Styling */
+
+.thank_you {
+  margin-top: 100px;
+}
+
+.thank_you h1 {
+  text-align: center;
+}
+
+
+
+/* End Thank Your Page Styling */
 
 
 

@@ -14,7 +14,7 @@ class ElectricPackagesController < ApplicationController
     @electric_packages_fixed = ElectricPackage.all.order("price").where(:plan_type => "fixed")[0..2]
   end
 
-  def asd
+  def all
     @all_variable = ElectricPackage.all.order("price").where(:plan_type => "variable")
     @all_fixed = ElectricPackage.all.order("price").where(:plan_type => "fixed")
   end

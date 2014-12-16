@@ -21,6 +21,8 @@ GetGreenir::Application.routes.draw do
 
   get '/electric_packages/all' => "electric_packages#show"
 
+  get '/thank-you' => "users#thank_you"
+
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
 #                       POST   /providers(.:format)                  providers#create
