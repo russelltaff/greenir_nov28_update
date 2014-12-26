@@ -32,7 +32,7 @@ class ElectricPackagesController < ApplicationController
     id = params['id']
     @electric_package = ElectricPackage.find(id)
     @user = User.new
-    @user_email = UserEmail.new
+    @user_email = ForgotAccountNumberEmail.new
   end
 
 def update

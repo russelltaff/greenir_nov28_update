@@ -17,7 +17,7 @@ GetGreenir::Application.routes.draw do
 
   get '/faq' => "faq#index"
 
-  post '/user_emails' => "user_emails#create"
+  post '/forgot_account_number_emails' => "forgot_account_number_emails#create"
 
   get '/electric_packages/all' => "electric_packages#show"
 

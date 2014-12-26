@@ -83,7 +83,7 @@
 				<%= f.hidden_field :package_id, :value => @electric_package.id %>
 				
 				<div class="form-group">
-			      <%= f.label :con_ed_id, "sdfdsf" %>
+			      <%= f.label :con_ed_id, "Con Edison Account Number" %>
 			      <%= f.text_field :con_ed_id, :class => "form-control" %>
 			      <a data-toggle="modal" data-target="#myModal">If you do not know your or do not have your electricity account number on you, click here</a>
 				</div>
@@ -107,7 +107,7 @@
       </div>
       <div class="modal-body">
         	<p style="font-size: 17px;">Can't remember or don't know where to find your Con Ed account number? We're more than happy to help out! If you drop your email in below, we'll send you a brief email about where to find your Con Ed account number so you can continue the sign up process later.</p>
-            <form action="/user_emails" method="post" id="new_user_email">
+            <form action="/forgot_account_number_emails" method="post" id="new_user_email">
                 <div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 					<input id="user_email_email" name="user_email[email]" type="email" class="form-control" placeholder="you@email.com">
