@@ -9,7 +9,7 @@ class ForgotAccountNumberEmailsController < ApplicationController
 	private
 
 	def forgot_account_number_email_params
-		params.require(:user_email).permit(:email)
+		params.require(:user_email).permit(:email, :package_id)
 	end
 
 end
