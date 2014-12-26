@@ -709,6 +709,22 @@ section {
 
 .thank_you h1 {
   text-align: center;
+  color: rgb(49, 240, 103);
+}
+
+.thank_you h2 {
+  text-align: center;
+  margin: 0 40px 0 40px;
+}
+
+.thank_you .shares {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thank_you .shares img {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 

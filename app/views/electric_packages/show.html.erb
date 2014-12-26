@@ -1,24 +1,30 @@
+<script type="text/javascript">
+$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+</script>
+
 <section id="labels">
   <div class="container">
     <div class="row">
-         <h1 class="intro">All Renewable Energy Packages For: <%= @zip_code %></h1>
+         <h1 class="intro">All Renewable Energy Packages For: <%= @zip_code %> <br /> 
+          <a href="/electric_packages?zip_code=<%= @zip_code%>" class="">Back to your recommended packages</a> 
+        </h1>
         <h1>Your Best Variable Rate Packages <span class="current_price">Current Price: <a class="price" data-toggle="tooltip" data-placement="left" title="An estimated price based on last month's Con Edison prices">15.9¢*</a></span></h1>
     </div>
       <div class="row">
         <% @all_variable.each do |package| %>
             <div class="col-sm-6 col-md-4">
               <div class="dl">
-                <div class="brand">
+                <div class="brand" data-toggle="modal" data-target="#modal_<%= package.id %>">
                    <img src="<%= package.provider.logo %>" />
                    <h3><%= package.percent_renewable %></h3>
                    <h4><%= package.terms %></h4>
                 </div>
-                <div class="discount alizarin">
+                <div class="discount alizarin" data-toggle="modal" data-target="#modal_<%= package.id %>">
                     <%= package.price %> <span class="kwh">per kwh</span>
                 </div>
-                <div class="descr">
+                <div class="descr" data-toggle="modal" data-target="#modal_<%= package.id %>">
                     <strong>
-                        <%= package.description %> 
+                       <a>See Package Details</a>
                     </strong> 
                 </div>
                 <a href="/electric_packages/checkout/<%= package.id %>">
@@ -28,6 +34,36 @@
                 </a>
               </div>
             </div>
+
+
+<!-- Modal for package detail -->
+
+<div class="modal fade" id="modal_<%= package.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="myModalLabel"><%= package.provider.name %>: <%= package.percent_renewable %></h3>
+      </div>
+      <div class="modal-body">
+        <u>Name:</u> <%= package.name %>
+        <br>
+        <u>Plan Type:</u> <%= package.plan_type.capitalize %> Rate
+        <br>
+        <u>Price:</u> <%= package.price %>
+        <br>
+        <u>Environmental Impact:</u> <%= package.description %>
+        <br>
+        <u>See Contract:</u> <a href="<%= package.contract_url %>" target="_blank">Residential Electricity Sales Agreement</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
 
             <% end %>
       </div>
@@ -44,17 +80,17 @@
         <% @all_fixed.each do |package| %>
             <div class="col-sm-6 col-md-4">
               <div class="dl">
-                <div class="brand">
+                <div class="brand" data-toggle="modal" data-target="#modal_<%= package.id %>">
                    <img src="<%= package.provider.logo %>" />
                    <h3><%= package.percent_renewable %></h3>
                     <h4><%= package.terms %></h4>
                 </div>
-                <div class="discount alizarin">
+                <div class="discount alizarin" data-toggle="modal" data-target="#modal_<%= package.id %>">
                     <%= package.price %> <span class="kwh">per kwh</span>
                 </div>
-                <div class="descr">
+                <div class="descr" data-toggle="modal" data-target="#modal_<%= package.id %>">
                     <strong>
-                        <%= package.description %> 
+                        <a>See Package Details</a> 
                     </strong> 
                 </div>
                 <a href="/electric_packages/checkout/<%= package.id %>" class="choose_package">
@@ -65,7 +101,43 @@
               </div>
             </div>
 
+
+<!-- Modal for package detail -->
+
+<div class="modal fade" id="modal_<%= package.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="myModalLabel"><%= package.provider.name %>: <%= package.percent_renewable %></h3>
+      </div>
+      <div class="modal-body">
+        <u>Name:</u> <%= package.name %>
+        <br>
+        <u>Plan Type:</u> <%= package.plan_type.capitalize %> Rate
+        <br>
+        <u>Price:</u> <%= package.price %>
+        <br>
+        <u>Environmental Impact:</u> <%= package.description %>
+        <br>
+        <u>See Contract:</u> <a href="<%= package.contract_url %>" target="_blank">Residential Electricity Sales Agreement</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" onclick="location.href='electric_packages/checkout/<%= package.id %>'">
+          Choose Package
+
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
             <% end %>
       </div>
   </div>
 </section>
+
+

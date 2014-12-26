@@ -6290,7 +6290,7 @@ body {
 /*    background: url("temp_green_background.jpg") no-repeat center center;
     background-size: cover;*/
 
-    background: url("temp_green_background.jpg") no-repeat center center fixed; 
+    /*background: url("<%= asset_path( 'field.jpg' ) %>") no-repeat center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -6408,6 +6408,42 @@ body {
   display: inline-block;
   margin-bottom: 2em;
 }
+
+/* Start Footer */
+  
+#social:hover {
+          -webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+      }
+      #social {
+        -webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+      }           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+      .social-fb:hover {
+        color: #3B5998;
+      }
+      .social-tw:hover {
+        color: #4099FF;
+      }
+      .social-gp:hover {
+        color: #d34836;
+      }
+      .social-em:hover {
+        color: #f39c12;
+      }
+
+/* End Footer */
+
+
 /* End Second/Third Section*/
 
 /****************ALL Electric Packages ***************/
@@ -6557,6 +6593,7 @@ section {
     /*border-radius: 20px;*/
     position: relative;
     border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 .dl:before {
@@ -6590,6 +6627,13 @@ section {
 
     padding: 20px 15px 0;
     color: white;
+}
+
+.dl:hover {
+  -moz-box-shadow: 0 0 30px #5cb85c; 
+  -webkit-box-shadow: 0 0 30px #5cb85c; 
+  box-shadow: 0 0 30px #5cb85c;
+  cursor: pointer; cursor: hand;
 }
 .kwh {
   font-size: 20px;
@@ -6631,6 +6675,7 @@ section {
     color: #999;
     margin-top: 10px;
     padding: 20px 15px; 
+    font-size: 16px;
 }
  
 .dl .ends {
@@ -6671,6 +6716,14 @@ section {
     padding: 10px 15px;
     color: #f1c40f;
     background: #f0f0f0;
+}
+
+.modal {
+  margin-top: 10%;
+}
+
+.modal .modal-header {
+  font-size: 18px;
 }
 
 /*End Electric Packages Index*/
@@ -6774,7 +6827,7 @@ section {
 }
 
 .faq_header .intro-header {
-   padding-bottom: 50px;
+   /*padding-bottom: 50px;*/
 }
 
 .faqs {
@@ -6866,6 +6919,36 @@ section {
 }
 
 /* End Checkout Page Styling */
+
+/* Start Thank You Page Styling */
+
+.thank_you {
+  margin-top: 100px;
+}
+
+.thank_you h1 {
+  text-align: center;
+  color: rgb(49, 240, 103);
+}
+
+.thank_you h2 {
+  text-align: center;
+  margin: 0 40px 0 40px;
+}
+
+.thank_you .shares {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thank_you .shares img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* End Thank Your Page Styling */
 
 
 

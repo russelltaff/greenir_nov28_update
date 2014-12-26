@@ -22,6 +22,8 @@ class ElectricPackagesController < ApplicationController
 
 
   def show
+    @zip_code = params[:zip_code]
+    print @zip_code
     @all_variable = ElectricPackage.all.order("price").where(:plan_type => "variable")
     @all_fixed = ElectricPackage.all.order("price").where(:plan_type => "fixed")
   end

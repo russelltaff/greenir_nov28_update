@@ -32,3 +32,8 @@ function faqSlide(){
     $(this).siblings(".faq_answer").slideToggle();
   })
 }
+
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
