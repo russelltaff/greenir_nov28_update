@@ -7,7 +7,7 @@ class ElectricPackagesController < ApplicationController
                             10009,10010,10011,10012]
 
     if !acceptable_zip_codes.include? @zip_code.to_i
-      redirect_to root_path
+      redirect_to '/coming-soon'
     end
 
     @electric_packages_variable = ElectricPackage.all.order("price").where(:plan_type => "variable")[0..2]
@@ -18,8 +18,6 @@ class ElectricPackagesController < ApplicationController
     @all_variable = ElectricPackage.all.order("price").where(:plan_type => "variable")
     @all_fixed = ElectricPackage.all.order("price").where(:plan_type => "fixed")
   end
-
-
 
   def show
     @zip_code = params[:zip_code]
@@ -49,10 +47,10 @@ def update
     end
   end
 
-  def purchase
+
+  def coming_soon
 
   end
-
 
   private
 

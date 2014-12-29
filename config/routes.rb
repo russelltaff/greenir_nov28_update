@@ -23,6 +23,8 @@ GetGreenir::Application.routes.draw do
 
   get '/thank-you' => "users#thank_you"
 
+  get '/coming-soon' => "users#coming_soon"
+
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
 #                       POST   /providers(.:format)                  providers#create

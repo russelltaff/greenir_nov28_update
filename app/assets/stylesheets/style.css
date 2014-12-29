@@ -733,7 +733,29 @@ section {
 
 /* End Thank Your Page Styling */
 
+/* Start Coming Soon page styling */
 
+.coming_soon {
+  margin-top: 100px;
+}
+
+.coming_soon h1 {
+  text-align: center;
+  color: rgb(49, 240, 103);
+}
+
+.coming_soon h2 {
+  text-align: center;
+  margin: 0 40px 0 40px;
+}
+
+.coming_soon .shares {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+/* End Coming Soon page styling*/
 
 
 
