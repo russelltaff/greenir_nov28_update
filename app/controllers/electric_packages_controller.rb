@@ -52,9 +52,10 @@ def update
 
   end
 
-  private
+private
 
   def electric_package
     params.require(:electric_package).permit(:name, :description, :terms, :plan_type, :percent_renewable, :duration, :cancellation_fee, :contract_url)
   end
+  
 end
