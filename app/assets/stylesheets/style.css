@@ -53,7 +53,7 @@ body {
 }
 
 .what_is_greenir {
-  
+  margin-bottom: 30px;
 }
 
 /* Navigation Styling Ends */
@@ -109,6 +109,12 @@ body {
   text-align: center;
 }
 
+.second_section {
+  color: white;
+  background-color: rgb(66, 139, 202);
+  margin-bottom: 30px;
+}
+
 .how_it_works, .concerns_title {
   font-size: 4em;
   margin-top: 0.5em;
@@ -132,6 +138,11 @@ body {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+}
+
+
+.third_section hr {
+  margin: 0;
 }
 
 .third_section .col-md-6 {
