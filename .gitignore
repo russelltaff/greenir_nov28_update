@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore all logfiles and tempfiles.
+/log/development.log
+/tmp
+/db/schema.rb
+/config/database.yml
