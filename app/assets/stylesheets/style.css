@@ -501,12 +501,17 @@ section {
 /* Start Footer */
 
 .footer {
+ position:fixed;
+ left:0px;
+ bottom:0px;
+ height:50px;
+ width:100%;
+ background:#999;
   background-color: #eee;
-  height: 70px;
   bottom: 0;
   clear: both;
-  position: relative;
-  margin-top: -3em;
+  /*position: relative;*/
+  /*margin-top: -3em;*/
   width: 100%;
 
 }
