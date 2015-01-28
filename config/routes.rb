@@ -17,9 +17,13 @@ GetGreenir::Application.routes.draw do
 
   get '/faq' => "faq#index"
 
-  post '/user_emails' => "user_emails#create"
+  post '/forgot_account_number_emails' => "forgot_account_number_emails#create"
 
   get '/electric_packages/all' => "electric_packages#show"
+
+  get '/thank-you' => "users#thank_you"
+
+  get '/coming-soon' => "users#coming_soon"
 
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
