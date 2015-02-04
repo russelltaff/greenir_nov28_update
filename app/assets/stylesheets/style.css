@@ -141,6 +141,9 @@ body {
 }
 
 
+.third_section {
+  padding-bottom: 40px;
+}
 .third_section hr {
   margin: 0;
 }
@@ -154,16 +157,21 @@ body {
 }
 
 .third_section h2 {
-  color: #5cb85c;
+  /*color: #5cb85c;*/
+  text-align: left;
+  padding-left: 130px;
+  font-size: 30px;
 }
 
 .third_section #see_more_faq a {
   color: #428bca;
   text-align: center;
+  font-size: 30px;
 }
 
-.third_section #see_more_faq h2 {
+.third_section #see_more_faq h3 {
   text-align: center;
+
 }
 
 .third_section #see_more_faq a:hover {
@@ -203,7 +211,7 @@ body {
 }
 
 /* Start Footer */
-  
+
 #social:hover {
           -webkit-transform:scale(1.1); 
 -moz-transform:scale(1.1); 
@@ -566,8 +574,7 @@ section {
 
 /* Start Footer */
 
-.footer {
- position:fixed;
+.footer {h
  left:0px;
  bottom:0px;
  height:50px;
