@@ -577,7 +577,7 @@ section {
 .footer {h
  left:0px;
  bottom:0px;
- height:50px;
+ height:70px;
  width:100%;
  background:#999;
   background-color: #eee;
@@ -586,6 +586,7 @@ section {
   /*position: relative;*/
   /*margin-top: -3em;*/
   width: 100%;
+  padding: 10px;
 
 }
 
