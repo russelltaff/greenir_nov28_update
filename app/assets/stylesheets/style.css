@@ -659,6 +659,10 @@ section {
   color: #5cb85c;
 }
 
+.faqs .col-md-6 {
+  padding-right: 57px;
+}
+
 .faqs .accordion-heading {
   margin-bottom: 10px;
 }
