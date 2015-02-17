@@ -376,6 +376,8 @@ section {
 #labels .current_price {
   float: right;
   display: inline-block;
+  font-size: 20px;
+  padding-top: 13px;
 
 }
 
