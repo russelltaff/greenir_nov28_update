@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141226194042) do
+ActiveRecord::Schema.define(version: 20150218042101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(version: 20141226194042) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
-# we made archived packages to track a specific order and the price in which the order was made. for example, user buys fixed at $1/kwh and then the price changes, we want to track the price in which the user bought the package at
   create_table "archived_packages", force: true do |t|
     t.string   "name"
     t.text     "description"
@@ -87,6 +86,11 @@ ActiveRecord::Schema.define(version: 20141226194042) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "package_id"
+  end
+
+  create_table "not_availables", force: true do |t|
+    t.string "email"
+    t.string "zip"
   end
 
   create_table "orders", force: true do |t|

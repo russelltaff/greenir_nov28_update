@@ -7,6 +7,7 @@ GetGreenir::Application.routes.draw do
   resources :providers
   resources :electric_packages
   resources  :users
+  resources  :not_availables
 
 
   # Custom Routes
@@ -23,7 +24,7 @@ GetGreenir::Application.routes.draw do
 
   get '/thank-you' => "users#thank_you"
 
-  get '/coming-soon' => "users#coming_soon"
+  get '/coming-soon' => "not_availables#index"
 
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index

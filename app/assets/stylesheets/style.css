@@ -24,7 +24,7 @@ body {
 }
 
 .custom .nav li a:hover {
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
   background-color: transparent;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .custom .navbar-brand:hover {
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
   background-color: transparent;
 }
 
@@ -56,11 +56,11 @@ body {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-device-width: 480px) {
+/*@media only screen and (max-device-width: 480px) {
   #fchat {
     visibility: hidden;
   }
-}
+}*/
 
 /* Navigation Styling Ends */
 
@@ -756,7 +756,7 @@ section {
 
 .thank_you h1 {
   text-align: center;
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
 }
 
 .thank_you h2 {
@@ -784,19 +784,38 @@ section {
   margin-top: 100px;
 }
 
+.coming_soon .row {
+  margin-right: 0;
+}
+
 .coming_soon h1 {
   text-align: center;
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
 }
 
 .coming_soon h2 {
   text-align: center;
-  margin: 0 40px 0 40px;
+  /*margin: 0 40px 0 40px;*/
 }
 
 .coming_soon .shares {
   text-align: center;
   margin-top: 40px;
+}
+
+
+.coming_soon input {
+  height: 45px;
+  width: 10em;
+  font-size: 30px;
+  /*border: 0;*/
+  border-radius: 2px;
+  color: #333;
+  text-align: center;
+}
+
+.coming_soon .btn-success {
+  color: white;
 }
 
 
