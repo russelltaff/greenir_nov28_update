@@ -1,5 +1,7 @@
 body {
-    font-family: 'Asap', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Asap', sans-serif;*/
     /*font-family: 'Raleway', sans-serif;*/
     /*font-weight: 300;*/
 }
@@ -807,7 +809,7 @@ section {
 .coming_soon input {
   height: 45px;
   width: 10em;
-  font-size: 30px;
+  font-size: 25px;
   /*border: 0;*/
   border-radius: 2px;
   color: #333;
@@ -816,6 +818,11 @@ section {
 
 .coming_soon .btn-success {
   color: white;
+  vertical-align: middle;
+}
+
+.coming_soon .form-inline {
+  text-align: center;
 }
 
 
