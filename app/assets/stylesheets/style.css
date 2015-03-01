@@ -564,6 +564,10 @@ section {
   /*margin-bottom: 5em;*/
   /*letter-spacing: 0.5px;*/
 }
+
+.faqs .row {
+  margin-right: 0
+}
 .faq {
   margin-top: 2em;
 }
