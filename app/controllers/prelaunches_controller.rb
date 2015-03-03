@@ -7,7 +7,7 @@ class PrelaunchesController < ApplicationController
 	def create
 		puts params[prelaunchs_params]
 		@prelaunchs = Prelaunch.create(prelaunchs_params)
-		redirect_to '/'
+		redirect_to '/thanks'
 	end
 
 	private
