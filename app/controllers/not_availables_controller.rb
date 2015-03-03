@@ -15,6 +15,11 @@ class NotAvailablesController < ApplicationController
 		@not_available = NotAvailable.create(not_available_params)
 		redirect_to '/'
 	end
+
+	def thanks
+
+	end
+
 	
 
 	private

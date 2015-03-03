@@ -12,7 +12,7 @@
   <%= csrf_meta_tags %>
 
   <!-- SumoMe Code -->
-  // <script src="//load.sumome.com/" data-sumo-site-id="bfe9c0cf729c0949e69e4bb553d2e27a40dfaebe84de0baffc349d5a20bf3081" async></script>
+  <script src="//load.sumome.com/" data-sumo-site-id="bfe9c0cf729c0949e69e4bb553d2e27a40dfaebe84de0baffc349d5a20bf3081" async></script>
   <!-- End SumoMe Code -->
 
   <!-- Meta Data Section -->
@@ -68,7 +68,7 @@
 
 <%= yield %>
 
-<% if controller.controller_name == "not_availables" %>
+<% if controller.controller_name == "not_availables" || controller.controller_name == "prelaunches" %>
 <% else %>
 
 <%= render "layouts/footer" %>

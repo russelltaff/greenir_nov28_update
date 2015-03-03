@@ -1,0 +1,29 @@
+<div class="prelaunch">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h1>Be the first person in your neighborhood to have your home or apartment powered by<br><u>100% renewable electricity</u></h1>
+			<h2>No installation required. No changes in service. Comparable prices to dirty energy.</h2>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+		<div class='form-inline'>
+
+			<%= form_for(@prelaunch) do |f| %>
+
+				<div class="form-group">
+	      			<%= f.text_field :email, :class => "form-control", placeholder: "Email", :autofocus =>true %>
+	  			</div>
+
+	  			<div class="form-group zip">
+
+	  				<%= f.text_field :zip, :class => "form-control", placeholder: "Zip Code" %>
+	  			</div>
+
+				<div class="form-group">	  
+ 					<%= f.submit "Update Me", class: "btn btn-success" %>
+				</div>
+			<% end %>
+		</div>
+	  
+</div>
