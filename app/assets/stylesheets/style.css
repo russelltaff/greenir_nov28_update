@@ -673,14 +673,16 @@ section {
 
 .faqs li a {
   color: #5cb85c;
+  padding-left: 45px;
 }
 
 .faqs .col-md-6 {
   padding-right: 57px;
 }
 
-.faqs .accordion-heading {
-  margin-bottom: 10px;
+.faqs .heading {
+  font-size: 25px;
+  color: grey;
 }
 
 .faqs h1 a {
