@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
 	def index
-		# redirect_to '/faq'
+		redirect_to '/prelaunch'
 	end
 
 end
