@@ -20,7 +20,7 @@ body {
 }
 .custom .navbar-nav>li>a {
   margin-top: 20px;
-  color: #333;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .custom .navbar-brand {
-  color: #333;
+  color: white;
   padding: 0;
   font-size: 20px;
 
@@ -44,7 +44,7 @@ body {
 
 .navbar {
   height: 5em;
-  background-color: white;
+  background-color: rgb(73, 73, 73);
   padding-bottom: 80px;
 }
 
@@ -52,6 +52,7 @@ body {
   height: 90px;
   padding: 10px;
   margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .what_is_greenir {
@@ -86,7 +87,7 @@ body {
     background-size: cover;
 }
 .intro-message {
-  font-size: 3em;
+  font-size: 4.5em;
   padding: 0.5em 1em;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -98,9 +99,9 @@ body {
 }
 
 #splash_input {
-	height: 45px;
+	height: 60px;
 	width: 10em;
-	font-size: 30px;
+	font-size: 35px;
   border: 0;
   border-radius: 2px;
   color: #333;
@@ -108,7 +109,8 @@ body {
 }
 
 .zip_submit {
-    font-size: 23px;
+    font-size: 33px;
+    height: 60px;
 }
 
 
