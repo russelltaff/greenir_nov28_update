@@ -44,7 +44,7 @@ body {
 
 .navbar {
   height: 5em;
-  background-color: rgb(73, 73, 73);
+  background-color: rgb(42, 64, 63);
   padding-bottom: 80px;
 }
 
@@ -71,7 +71,7 @@ body {
 /* Start Intro Section */
 
 .action_box {
-  background-color: rgba(8,8,8,0.5);
+  /*background-color: rgba(8,8,8,0.5);*/
   border-radius: 6px;
   height: 100%;
   margin-top: 20px;
