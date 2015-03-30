@@ -844,7 +844,8 @@ section {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 170px;
 }
 
 .prelaunch h1 {
@@ -881,6 +882,10 @@ section {
 .prelaunch .follow_us img {
   height: 100px;
   margin: auto;
+}
+
+.under_signup {
+  text-align: center;
 }
 
 
