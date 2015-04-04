@@ -107,11 +107,7 @@
 
 <!-- Start Firehose Script -->
 
-<script type="text/javascript">
-  var FHChat = {product_id: "70f6db047c09"};
-  FHChat.properties={};FHChat.set=function(key,data){this.properties[key]=data};!function(){var a,b;return b=document.createElement("script"),a=document.getElementsByTagName("script")[0],b.src="https://chat-client-js.firehoseapp.com/chat-min.js",b.async=!0,a.parentNode.insertBefore(b,a)}();
-</script>
+<script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '3cb45f9e-f13c-4caf-8608-a7b81b68797b', f: true });done = true;}};})();</script>
 
-<!-- End Firehose -->
 </body>
 </html>
