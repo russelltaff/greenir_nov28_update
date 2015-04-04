@@ -1,6 +1,7 @@
 class PrelaunchesController < ApplicationController
 
 	def prelaunch
+		puts request.original_url
 		@prelaunch = Prelaunch.new
 	end
 
