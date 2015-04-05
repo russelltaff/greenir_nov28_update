@@ -12,12 +12,12 @@
 			<%= form_for(@prelaunch) do |f| %>
 
 				<div class="form-group">
-	      			<%= f.text_field :email, :class => "form-control", placeholder: "Email", :autofocus =>true %>
+	      			<%= f.text_field :email, :class => "form-control", placeholder: "Email", :autofocus =>true , :required => true %>
 	  			</div>
 
 	  			<div class="form-group zip">
 
-	  				<%= f.text_field :zip, :class => "form-control", placeholder: "Zip Code" %>
+	  				<%= f.text_field :zip, :class => "form-control", placeholder: "Zip Code", :required => true %>
 	  			</div>
 
 				<div class="form-group">	  
