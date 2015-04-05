@@ -888,6 +888,16 @@ section {
   text-align: center;
 }
 
+.prelaunch_thanks {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/wind_turbine-9c000cc789f963f73302a0b24de9f46c.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  /*padding-bottom: 170px;*/
+}
+
 
 /* End Prelaunch Styling */
 
