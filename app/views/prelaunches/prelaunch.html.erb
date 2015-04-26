@@ -1,64 +1,91 @@
 <div class="prelaunch">
 	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
+		<!-- <div class="col-md-1"></div> -->
+		<div class="col-md-12">
 			<h1>Power Your Home With <u>100% Renewable Electricity</u></h1>
 			<h2>Review your local green electricity options and switch to renewables with no installation required</h2>
-			<h3 style="text-align:center; color:white;">(Coming Soon)</h3>
 		</div>
-		<div class="col-md-1"></div>
+		<!-- <div class="col-md-1"></div> -->
 	</div>
-		<div class='form-inline'>
+	<div class='form-inline'>
 
-			<%= form_for(@prelaunch) do |f| %>
+		<%= form_for(@prelaunch) do |f| %>
 
-				<div class="form-group">
-	      			<%= f.text_field :email, :class => "form-control", placeholder: "Email", :autofocus =>true , :required => true %>
-	  			</div>
+			<div class="form-group">
+      			<%= f.text_field :email, :class => "form-control", placeholder: "Email", :autofocus =>true , :required => true %>
+  			</div>
 
-	  			<div class="form-group zip">
+  			<div class="form-group zip">
 
-	  				<%= f.text_field :zip, :class => "form-control", placeholder: "Zip Code", :required => true %>
-	  			</div>
+  				<%= f.text_field :zip, :class => "form-control", placeholder: "Zip Code", :required => true %>
+  			</div>
 
-				<div class="form-group">	  
- 					<%= f.submit "Go Green", class: "btn btn-success" %>
-				</div>
-			<% end %>
-		</div>
+			<div class="form-group">	  
+					<%= f.submit "Go Green", class: "btn btn-success" %>
+			</div>
+		<% end %>
+	</div>
 		
+</div>
+
+<div class="prelaunch_faq">
+	<h1>Tell Me More</h1>
+	<div class="container">
+		<div class="row">
+	        <div class="col-sm-6 col-md-4 card">
+        		<h2>What is Greenir?</h2>
+        		<h4>Greenir provides you with high-quality, vetted, and affordable renewable electricity packges that are available in your area. We don't supply you with energy, we help you compare and select a renewable energy option that fits your budget.</h4>
+	        </div>
+	        <div class="col-sm-6 col-md-4 card">
+        		<h2>Why Switch?</h2>
+        		<h4>If you live in a deregulated market, you have the right to choose the energy supplier that powers your home. Instead of paying for dirty energy or investing in solar panels, why not pay a utility company to source your electricity from a renewable source?</h4>
+	        </div>
+	        <div class="col-sm-6 col-md-4 card">
+        		<h2>How Will I Be Billed?</h2>
+        		<h4>Your payments will still be made to your electricity supplier as you normally would, but you'll notice a change on the supply side of the bill in that your electricity is now coming from a new source.</h4>
+	        </div>
+	    </div>
+
+	</div>
 
 </div>
 
-<div class="what_is_greenir">
-    <div class='container'>
-        <div class="col-md-7">
-            <h1>What Is <span style="color: #4cae4c;">Greenir</span>?</h1>
-            <h4>Greenir provides you with high-quality, vetted, and affordable renewable electricity packges that are available in your area. We don't supply you with energy, we help you compare and select a renewable energy option that fits your budget.<br><br>
-            If you live in a deregulated market, you have the right to choose the energy supplier that powers your home. Instead of paying for dirty energy or investing in solar panels, why not pay a utility company to source your electricity from a renewable source?</h4>
-        </div>
-        <div class="col-md-5" style="margin-top: 20px;">
-
-            <a href="/faq"><h3>Why Should I Switch?</h3></a>
-            <a href="/faq"><h3>Which Package Should I Choose?</h3></a>
-            <a href="/faq"><h3>Will I Save Money?</h3></a>
-            <a href="/faq"><h3>Will My Billing Change?</h3></a>
-            <a href="/faq"><h3>Are The Suppliers Reliable? Will My Power Go Out?</h3></a>
-
+<div class="prelaunch_how_it_works">
+    <div class="second_section">
+        <div class="container">
+            <div class="row how_it_works">
+                How It Works
+            </div>
+            <h2>You Don't Need A Solar Panel To Run Your Home On Renewable Energy</h2>
+            <div class="row" id="pitches">
+                <div class="col-md-4 pitch_point">
+                    <div class="pitch_icon">
+                        <img src="<%= asset_path( 'prelaunch_search.png' ) %>">
+                    </div>
+                    <div class="pitch_tagline">Search And Review Your Local Renewable Electricity Packages</div>
+                </div>
+                <div class="col-md-4 pitch_point">
+                    <div class="pitch_icon">
+                        <img src="<%= asset_path( 'prelaunch_select.png' ) %>">
+                    </div>
+                    <div class="pitch_tagline">Choose The Package That Fits Your Budget</div>
+                </div>
+                <div class="col-md-4 pitch_point">
+                    <div class="pitch_icon">
+                        <img src="<%= asset_path( 'prelaunch_go_green.png' ) %>">
+                    </div>
+                    <div class="pitch_tagline">Join The Green Energy Movement</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<!-- 
-<div class="under_signup">
-	<div class="row" style="margin-right:0">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<h1>What Is <span style="color: #4cae4c;">Greenir</span>?</h1>
-			<h2>Greenir is a marketplace for 100% renewable electricity packages for your home or apartment.<br><br>
-            Whether you are a renter or home owner, if you live in a deregulated market, you have the right to choose the energy supplier that powers your home. <br><br>
-            We believe that by partnering with the best renewable electricity suppliers in the country, we can provide our customers with the opportunity to invest in the future of renewable energy.</h2>
-            <h3 id="see_more_faq"><a href="/faq">Need More Information? See Our Entire FAQ Page!</a></h3>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
-</div> -->
+
+<div class="prelaunch_third_section">
+    <a href="mailto:evan@getgreenir.com?Subject=Help%20With%20Greenir" target="_blank">Still not clear on how this works? Email our founder directly with any questions!</a>
+</div>
+
+<div class="prelaunch_footer">
+    <h4>Follow Us!  <a href="https://www.facebook.com/getgreenir" target="_blank"><img class='social' src="<%= asset_path( 'fb.png' ) %>"></a>  <a href="https://twitter.com/get_greenir" target="_blank"><img class='social' src="<%= asset_path( 'twitter.png' ) %>"></a></h4>
+</div>
+
