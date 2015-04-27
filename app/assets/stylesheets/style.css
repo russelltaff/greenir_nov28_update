@@ -8,15 +8,15 @@ body {
 
 /* Star Prelaunch Styling */
 
-.prelaunch {
-/*  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(/assets/new_background-3a96e60cebf5eeab6b63380d4e86f6bd.png);
+/*.prelaunch {
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(/assets/new_background-3a96e60cebf5eeab6b63380d4e86f6bd.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;*/
+  background-size: cover;
   width: 100%;
   height: auto;
   padding-bottom: 200px;
-}
+}*/
 
 .prelaunch h1 {
   color: white;
