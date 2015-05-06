@@ -9,7 +9,7 @@ body {
 /* Star Prelaunch Styling */
 
 .prelaunch {
-  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(/assets/new_background-3a96e60cebf5eeab6b63380d4e86f6bd.png);
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(/assets/new_background-compressor-cb991b43b0a846795744931b8552d447.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -308,8 +308,8 @@ body {
 }
 .pitch_icon img {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 220px;
+  width: 220px;
 }
 
 
