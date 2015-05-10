@@ -89,3 +89,15 @@
     <h4>Follow Us!  <a href="https://www.facebook.com/getgreenir" target="_blank"><img class='social' src="<%= asset_path( 'fb.png' ) %>"></a>  <a href="https://twitter.com/get_greenir" target="_blank"><img class='social' src="<%= asset_path( 'twitter.png' ) %>"></a></h4>
 </div>
 
+<!-- Tailor Script -->
+<script>
+    $('.btn btn-success').click(function(e)){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        tailor.trackSuccess(function(){
+            window.location = href;
+        });
+    });
+</script>
+<!-- end Tailor -->
+
