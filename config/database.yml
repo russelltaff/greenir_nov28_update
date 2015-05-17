@@ -17,11 +17,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: get_greenir_dev
+  database: get_greenir_development
   pool: 5
-  username: rtaff2012
-  password: leonruss
-  host: localhost
+  username: 
+  password: 
+  host: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have

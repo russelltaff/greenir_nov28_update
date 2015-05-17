@@ -11,6 +11,7 @@ class CreateElectricPackages < ActiveRecord::Migration
       t.integer :provider_id
       t.integer :sales_id
       t.string :cancellation_fee
+      t.string :contract_url
 
       t.timestamps
     end

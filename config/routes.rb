@@ -2,11 +2,13 @@ GetGreenir::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root to: "home#index"
+  root to: "home#index" 
   
   resources :providers
   resources :electric_packages
   resources  :users
+  resources  :not_availables
+  resources :prelaunches
 
 
   # Custom Routes
@@ -17,9 +19,17 @@ GetGreenir::Application.routes.draw do
 
   get '/faq' => "faq#index"
 
-  post '/user_emails' => "user_emails#create"
+  post '/forgot_account_number_emails' => "forgot_account_number_emails#create"
 
   get '/electric_packages/all' => "electric_packages#show"
+
+  get '/thank-you' => "users#thank_you"
+
+  get '/coming-soon' => "not_availables#index"
+
+  get '/prelaunch' => "prelaunches#prelaunch"
+
+  get '/thanks' => "prelaunches#thanks"
 
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index

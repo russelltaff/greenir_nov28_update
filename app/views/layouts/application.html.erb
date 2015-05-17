@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GetGreenir</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/ico" href="<%= asset_path( 'greenir.png' ) %>" />
+  <title>Greenir</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/ico" href="<%= asset_path( 'greenir_without_tree.jpg' ) %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
   <!-- SumoMe Code -->
   <!-- // <script src="//load.sumome.com/" data-sumo-site-id="bfe9c0cf729c0949e69e4bb553d2e27a40dfaebe84de0baffc349d5a20bf3081" async></script> -->
   <!-- End SumoMe Code -->
+
+  <!-- Optimizely Code -->
+  <script src="//cdn.optimizely.com/js/2750580315.js"></script>
+  <!-- End optimizely code -->
+
+  <!-- Meta Data Section -->
+
+  <!-- Place this data between the <head> tags of your website -->
+  <meta name="description" content="Renewable electricity for your home or apartment in minutes" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="Renewable electricity for your home or apartment in minutes">
+  <meta name="twitter:site" content="@get_greenir">
+  <meta name="twitter:title" content="Greenir">
+  <meta name="twitter:description" content="Renewable electricity for your home or apartment in minutes">
+  <meta name="twitter:creator" content="@get_greenir">
+  
+   <!-- Twitter Summary card images must be at least 120x120px  -->
+  <meta name="twitter:image" content="http://www.getgreenir.com/assets/greenir_social-3bd1554b88b1b95ac29eff9a22e1ae88.png">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Greenir - Power Your Home With Renewable Electricity In Minutes" />
+  <meta property="og:url" content= "<%= request.original_url.to_s  %>" >
+  <meta property="og:image" content="http://www.getgreenir.com/assets/wind_turbine-9c000cc789f963f73302a0b24de9f46c.jpg" />
+  <meta property="og:description" content="Greenir provides you with your local renewable electricity options and allows you to switch to green energy without billing or service changes" /> 
+  <meta property="og:site_name" content="Greenir" />
+
+
+  <!-- End Meta Data -->
+
 </head>
 <body>
   <!-- Navigation -->
@@ -26,13 +60,16 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img class='logo' src="<%= asset_path( 'greenir.png' ) %>"> Greenir
+            <img class='logo' src="<%= asset_path( 'greenir_without_tree.jpg' ) %>"> Greenir
           </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <% if controller.controller_name == "prelaunches" %>
+            <% else %>
             <li><a href="/faq">FAQ</a> </li>
-            <li><a style="background-color: #428bca; color: white" href="mailto:help@getgreenir.com?Subject=Help%20With%20Greenir">Questions?</a></li>
+            <% end %>
+            <li><a style="background-color: #4fad21; color: white" href="mailto:support@getgreenir.com?Subject=Help%20With%20Greenir">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -40,8 +77,25 @@
 
 
 <%= yield %>
-<%= render "layouts/footer" %>
 
+<% if controller.controller_name == "not_availables" || controller.controller_name == "prelaunches" %>
+<% else %>
+
+<%= render "layouts/footer" %>
+<% end %>
+
+
+<!-- <hr /> -->
+
+<!-- <div class="container">
+  <div class="text-right center-block">
+    <a href="https://www.facebook.com/bootsnipp"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+    <a href="https://twitter.com/bootsnipp"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+    <a href="mailto:bootsnipp@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+  </div>
+
+</div> -->
 
 
 
@@ -54,30 +108,15 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-53028102-1', 'auto');
+  ga('create', 'UA-53028102-2', 'auto');
   ga('send', 'pageview');
 
 </script>
 <!-- Google Analytics End -->
 
-<!-- Start Firehose Script -->
+<!-- Start Purechat Script -->
 
-<script type="text/javascript">
 
-if( !(navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)
- )) {
-    var FHChat = {product_id: "01ff0bafeb8f"};
-  FHChat.properties={};FHChat.set=function(key,data){this.properties[key]=data};!function(){var a,b;return b=document.createElement("script"),a=document.getElementsByTagName("script")[0],b.src="https://chat-client-js.firehoseapp.com/chat-min.js",b.async=!0,a.parentNode.insertBefore(b,a)}();
-}
 
-</script>
-
-<!-- End Firehose -->
 </body>
 </html>

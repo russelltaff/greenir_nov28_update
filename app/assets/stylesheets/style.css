@@ -1,8 +1,170 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Asap', sans-serif;*/
     /*font-family: 'Raleway', sans-serif;*/
     /*font-weight: 300;*/
 }
+
+/* Star Prelaunch Styling */
+
+.prelaunch {
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(/assets/new_background-compressor-cb991b43b0a846795744931b8552d447.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 200px;
+}
+
+.prelaunch h1 {
+  color: white;
+  padding-top: 150px;
+  text-align: center;
+  font-size: 55px;
+}
+
+.prelaunch h2 {
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+
+.prelaunch .row {
+  margin-right: 0;
+}
+
+.prelaunch input {
+  font-size: 30px;
+  height: auto;
+  text-align: center;
+  background-color: 
+}
+
+.prelaunch .btn-success {
+  background-color: #4fad21;
+}
+
+.prelaunch .form-inline {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.prelaunch .follow_us {
+  color: rgb(255, 232, 14);
+  text-align: center;
+  /*padding-top: 60px;*/
+}
+
+.prelaunch .follow_us h2 {
+  font-size: 34px;
+  text-decoration: underline;
+}
+
+.prelaunch .follow_us img {
+  height: 100px;
+  margin: auto;
+}
+
+.prelaunch_faq {
+  /*background-image: url(/assets/prelaunch_faq_background.png);*/
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.prelaunch_faq h1 {
+  margin-top:0;
+  color: #4fad21;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.prelaunch_faq h2 {
+  font-size: 30px;
+}
+
+.prelaunch_how_it_works {
+  background-color: #428bca;
+}
+
+.prelaunch_how_it_works .second_section {
+  margin-bottom: 0;
+}
+
+.prelaunch_how_it_works h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.prelaunch_how_it_works h2 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+
+}
+
+.prelaunch_how_it_works .how_it_works {
+  font-size: 50px;
+}
+
+.prelaunch_how_it_works .pitch_tagline {
+  font-size: 18px;
+}
+
+.prelaunch_how_it_works img {
+  width: 241px;
+  height: 241px;
+  border: 16px solid #4d96d5;
+}
+
+.prelaunch_third_section {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.prelaunch_footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding-top: 10px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.prelaunch_footer h4 {
+  margin-bottom: 0;
+  padding-right: 60px;
+  text-align:right;
+}
+
+.prelaunch_footer .logo {
+  margin-bottom: 0;
+}
+.prelaunch_footer .social {
+  height: 60px;
+}
+
+
+.prelaunch_thanks {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/wind_turbine-9c000cc789f963f73302a0b24de9f46c.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  /*padding-bottom: 170px;*/
+}
+
+
+/* End Prelaunch Styling */
+
+
+
+
+
 .main_container {
   padding-top: 6em;
 }
@@ -18,31 +180,31 @@ body {
 }
 .custom .navbar-nav>li>a {
   margin-top: 20px;
-  color: #333;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
 
 .custom .nav li a:hover {
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
   background-color: transparent;
 }
 
 .custom .navbar-brand {
-  color: #333;
+  color: white;
   padding: 0;
   font-size: 20px;
 
 }
 
 .custom .navbar-brand:hover {
-  color: rgb(49, 240, 103);
+  color: #5cb85c;
   background-color: transparent;
 }
 
 .navbar {
   height: 5em;
-  background-color: white;
+  background-color: transparent;
   padding-bottom: 80px;
 }
 
@@ -50,7 +212,18 @@ body {
   height: 90px;
   padding: 10px;
   margin-bottom: 10px;
+  padding-bottom: 15px;
 }
+
+.what_is_greenir {
+  margin-bottom: 30px;
+}
+
+/*@media only screen and (max-device-width: 480px) {
+  #fchat {
+    visibility: hidden;
+  }
+}*/
 
 /* Navigation Styling Ends */
 
@@ -58,7 +231,7 @@ body {
 /* Start Intro Section */
 
 .action_box {
-  background-color: rgba(8,8,8,0.5);
+  /*background-color: rgba(8,8,8,0.5);*/
   border-radius: 6px;
   height: 100%;
   margin-top: 20px;
@@ -68,37 +241,36 @@ body {
     padding-bottom: 5em;
     text-align: center;
     color: #f8f8f8;
-/*    background: url("temp_green_background.jpg") no-repeat center center;
-    background-size: cover;*/
-
-    /*background: url("<%= asset_path( 'field.jpg' ) %>") no-repeat center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .intro-message {
-  font-size: 3em;
+  font-size: 4.5em;
   padding: 0.5em 1em;
   letter-spacing: 1px;
   word-spacing: 5px;
 }
+
 
 .splash_form {
   margin: .5em 0;
 }
 
 #splash_input {
-	height: 45px;
+	height: 60px;
 	width: 10em;
-	font-size: 30px;
+	font-size: 35px;
   border: 0;
   border-radius: 2px;
   color: #333;
+  text-align: center;
 }
 
 .zip_submit {
-    font-size: 23px;
+    font-size: 33px;
+    height: 60px;
 }
 
 
@@ -107,6 +279,12 @@ body {
 /* Start Second/Third Section */
 .second_section, .third_section {
   text-align: center;
+}
+
+.second_section {
+  color: white;
+  background-color: rgb(66, 139, 202);
+  margin-bottom: 30px;
 }
 
 .how_it_works, .concerns_title {
@@ -130,8 +308,16 @@ body {
 }
 .pitch_icon img {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 220px;
+  width: 220px;
+}
+
+
+.third_section {
+  padding-bottom: 40px;
+}
+.third_section hr {
+  margin: 0;
 }
 
 .third_section .col-md-6 {
@@ -143,16 +329,21 @@ body {
 }
 
 .third_section h2 {
-  color: #5cb85c;
+  /*color: #5cb85c;*/
+  text-align: left;
+  padding-left: 130px;
+  font-size: 30px;
 }
 
 .third_section #see_more_faq a {
   color: #428bca;
   text-align: center;
+  font-size: 30px;
 }
 
-.third_section #see_more_faq h2 {
+.third_section #see_more_faq h3 {
   text-align: center;
+
 }
 
 .third_section #see_more_faq a:hover {
@@ -172,6 +363,7 @@ body {
 .third_section h1 {
   text-align: left;
   padding-left: 130px;
+  font-size: 30px;
 }
 
 .fa-10x {
@@ -189,6 +381,42 @@ body {
   display: inline-block;
   margin-bottom: 2em;
 }
+
+/* Start Footer */
+
+#social:hover {
+          -webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+      }
+      #social {
+        -webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+      }           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+      .social-fb:hover {
+        color: #3B5998;
+      }
+      .social-tw:hover {
+        color: #4099FF;
+      }
+      .social-gp:hover {
+        color: #d34836;
+      }
+      .social-em:hover {
+        color: #f39c12;
+      }
+
+/* End Footer */
+
+
 /* End Second/Third Section*/
 
 /****************ALL Electric Packages ***************/
@@ -309,13 +537,17 @@ section {
 #labels .intro {
   background-color: #BBBABA;
   color: white;
-  padding: 10px 0 10px 0;
+  padding: 18px 18px 18px 18px;
+  border-radius: 5px;
+  text-align: center;
 
 }
 
 #labels .current_price {
   float: right;
   display: inline-block;
+  font-size: 20px;
+  padding-top: 13px;
 
 }
 
@@ -373,6 +605,13 @@ section {
     padding: 20px 15px 0;
     color: white;
 }
+
+.dl:hover {
+  -moz-box-shadow: 0 0 30px #5cb85c; 
+  -webkit-box-shadow: 0 0 30px #5cb85c; 
+  box-shadow: 0 0 30px #5cb85c;
+  cursor: pointer; cursor: hand;
+}
 .kwh {
   font-size: 20px;
 }
@@ -413,6 +652,7 @@ section {
     color: #999;
     margin-top: 10px;
     padding: 20px 15px; 
+    font-size: 16px;
 }
  
 .dl .ends {
@@ -455,6 +695,14 @@ section {
     background: #f0f0f0;
 }
 
+.modal {
+  margin-top: 10%;
+}
+
+.modal .modal-header {
+  font-size: 18px;
+}
+
 /*End Electric Packages Index*/
 
 
@@ -478,6 +726,10 @@ section {
   /*margin-bottom: 5em;*/
   /*letter-spacing: 0.5px;*/
 }
+
+.faqs .row {
+  margin-right: 0
+}
 .faq {
   margin-top: 2em;
 }
@@ -500,11 +752,10 @@ section {
 
 /* Start Footer */
 
-.footer {
- position:fixed;
+.footer {h
  left:0px;
  bottom:0px;
- height:50px;
+ height:70px;
  width:100%;
  background:#999;
   background-color: #eee;
@@ -513,6 +764,7 @@ section {
   /*position: relative;*/
   /*margin-top: -3em;*/
   width: 100%;
+  padding: 10px;
 
 }
 
@@ -583,10 +835,16 @@ section {
 
 .faqs li a {
   color: #5cb85c;
+  padding-left: 45px;
 }
 
-.faqs .accordion-heading {
-  margin-bottom: 10px;
+.faqs .col-md-6 {
+  padding-right: 57px;
+}
+
+.faqs .heading {
+  font-size: 25px;
+  color: grey;
 }
 
 .faqs h1 a {
@@ -616,6 +874,12 @@ section {
 
 /* Start Checkout Page Styling */
 
+
+.checkout_intro {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
 .checkout .table {
   margin-top: 20px;
   width: 100%;
@@ -653,6 +917,84 @@ section {
 }
 
 /* End Checkout Page Styling */
+
+/* Start Thank You Page Styling */
+
+.thank_you {
+  margin-top: 100px;
+}
+
+.thank_you h1 {
+  text-align: center;
+  color: #5cb85c;
+}
+
+.thank_you h2 {
+  text-align: center;
+  margin: 0 40px 0 40px;
+}
+
+.thank_you .shares {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thank_you .shares img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* End Thank Your Page Styling */
+
+/* Start Coming Soon page styling */
+
+.coming_soon {
+  margin-top: 100px;
+}
+
+.coming_soon .row {
+  margin-right: 0;
+}
+
+.coming_soon h1 {
+  text-align: center;
+  color: #5cb85c;
+}
+
+.coming_soon h2 {
+  text-align: center;
+  /*margin: 0 40px 0 40px;*/
+}
+
+.coming_soon .shares {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.coming_soon input {
+  height: 45px;
+  width: 10em;
+  font-size: 25px;
+  /*border: 0;*/
+  border-radius: 2px;
+  color: #333;
+  text-align: center;
+}
+
+.coming_soon .btn-success {
+  color: white;
+  vertical-align: middle;
+}
+
+.coming_soon .form-inline {
+  text-align: center;
+}
+
+
+/* End Coming Soon page styling*/
 
 
 
